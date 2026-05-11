@@ -2,50 +2,77 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
     <title>Rituals</title>
-    <meta name="description" content="Tu espacio personal para construir mejores rutinas diarias." />
+
+    <meta
+      name="description"
+      content="Tu espacio personal para construir mejores rutinas diarias."
+    />
+
     <meta name="theme-color" content="#a0522d" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Rituals" />
     <meta name="robots" content="index, follow" />
+
     <meta property="og:title" content="Rituals" />
-    <meta property="og:description" content="Tu espacio personal para construir mejores rutinas diarias." />
+    <meta
+      property="og:description"
+      content="Tu espacio personal para construir mejores rutinas diarias."
+    />
     <meta property="og:type" content="website" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- Marca sutil -->
     <div
-  style={{
-    position: "fixed",
-    bottom: "10px",
-    right: "14px",
-    fontSize: "11px",
-    fontWeight: "500",
-    color: "rgba(120,255,210,0.22)",
-    letterSpacing: "1px",
-    userSelect: "none",
-    pointerEvents: "none",
-    zIndex: 9999,
-    fontFamily: "Inter, sans-serif",
-  }}
->
-  2BleA
-</div>
+      style="
+        position: fixed;
+        bottom: 14px;
+        right: 18px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.06);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        color: rgba(180,255,230,0.42);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+        font-family: Inter, sans-serif;
+        box-shadow: 0 0 18px rgba(80,255,200,0.05);
+        user-select: none;
+        pointer-events: none;
+        z-index: 9999;
+      "
+    >
+      2BleA
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/sw.js");
-        });
-      }
-    </script>
   </body>
 </html>
