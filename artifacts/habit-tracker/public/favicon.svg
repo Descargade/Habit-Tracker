@@ -1,3 +1,51 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7CFFB2"/>
+      <stop offset="100%" stop-color="#33F6FF"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+
+  <!-- Glow -->
+  <circle cx="128" cy="128" r="74"
+          stroke="url(#ring)"
+          stroke-width="10"
+          fill="none"
+          opacity="0.9"
+          filter="url(#glow)"/>
+
+  <!-- Círculo -->
+  <circle cx="128" cy="128" r="74"
+          stroke="url(#ring)"
+          stroke-width="8"
+          fill="none"/>
+
+  <!-- Check -->
+  <path d="M96 132 L120 156 L168 108"
+        fill="none"
+        stroke="#8CFFB8"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Puntos -->
+  <circle cx="74" cy="62" r="10" fill="#8CFFB8"/>
+  <circle cx="98" cy="46" r="7" fill="#6FFFE9"/>
+  <circle cx="118" cy="34" r="5" fill="#33F6FF"/>
 </svg>
